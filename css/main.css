@@ -1,0 +1,149 @@
+:root {
+    --primary: #00ff99;
+    --primary-dark: #009966;
+    --accent: #00e6b8;
+    --bg: #101820;
+    --bg-light: #18232e;
+    --text: #e6fff7;
+    --text-dark: #00ff99;
+    --border: #00ff9944;
+    --shadow: 0 4px 24px #00ff9944;
+}
+
+main {
+    background: linear-gradient(120deg, var(--primary-dark) 0%, var(--bg) 100%);
+    color: var(--text);
+    padding: 4em 0 2em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .txt {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+
+    & h2 {
+        font-size: 2.5rem;
+    }
+
+    & p {
+        font-size: 1.5rem;
+    }
+}
+
+.container .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.container .imagem img{
+    width: 500px;
+    max-width: 400px;
+}
+
+
+/*  ANIMAÇÃO NA IMAGEM */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+
+.buttoms {
+    display: flex;
+    gap: 1rem;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.buttoms .btn--primary {
+    color: var(--bg);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.8rem 1.6rem;
+    color: var(--bg);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.btn--primary:hover {
+    background: var(--primary-dark);
+    color: var(--text);
+}
+
+.btn--secondary {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.8rem 1.6rem;
+    color: var(--text);
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn--secondary:hover {
+    /* background: var(--primary); */
+    color: var(--bg);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        & h2 {
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    .txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .buttoms {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .container .imagem  {
+        margin: 0 auto;
+        margin-top: 50px;
+
+        & img {
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('header.css');
+@import url('main.css');
+@import url('search.css');
+@import url('cadastro.css');
+@import url('slider.css');
+@import url('anuncios.css');
+@import url('about.css');
+@import url('footer.css');
+@import url('novoanuncio.css');
+
+:root {
+    --primary: #00ff99;
+    --primary-dark: #009966;
+    --accent: #00e6b8;
+    --bg: #101820;
+    --bg-light: #18232e;
+    --text: #e6fff7;
+    --text-dark: #00ff99;
+    --border: #00ff9944;
+    --shadow: 0 4px 24px #00ff9944;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    background: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--accent);
+}

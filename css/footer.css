@@ -1,0 +1,74 @@
+:root {
+    --primary: #00ff99;
+    --primary-dark: #009966;
+    --accent: #00e6b8;
+    --bg: #101820;
+    --bg-light: #18232e;
+    --text: #e6fff7;
+    --text-dark: #00ff99;
+    --border: #00ff9944;
+    --shadow: 0 4px 24px #00ff9944;
+}
+
+#footer {
+    
+    background: var(--bg-light);
+    box-shadow: var(--shadow);
+}
+
+.txt-footer {
+    text-align: center;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em 0 2em 0;
+}
+
+.conteudo .logo-footer img{
+    max-width: 100px;
+    height: auto;
+}
+
+.conteudo .sociais {
+    display: flex;
+    gap: 1em;
+
+    & i {
+
+        font-size: 2.5em;
+        color: var(--text);
+        padding: 0.2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.sociais .insta {
+    background: #F00073;
+    padding: 0.2rem;
+    border-radius: 50%;
+
+    & a {
+        color: var(--text);
+        text-decoration: none;
+    }
+}
+
+.sociais .zap {
+    background: #25D366;
+    padding: 0.2rem;
+    border-radius: 50%;
+
+    & a {
+        color: var(--text);
+        text-decoration: none;
+    }
+}
+

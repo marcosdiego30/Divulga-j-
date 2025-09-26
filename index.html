@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Divulgações</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-header">
+            <h1>MD <span>Divulgações</span></h1>
+
+            <nav id="nav-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-links" href="#">Inicio</a></li>
+                    <li><a class="nav-links" href="#about">Sobre</a></li>
+                    <li><a class="nav-links" href="#featured-ads">Anúncios</a></li>
+                </ul>
+            </nav>
+
+            <div class="cadastro">
+                <a class="nav-links link-ghost" href="#">Login</a>
+                <a class="nav-links link-ghost" href="#">Cadastrar</a>
+            </div>
+
+            <div class="menu-mobile">
+                <i class="fa-solid fa-bars " id="btn-menu"></i>
+            </div>
+
+            <div id="nav-mobile">
+
+                <i class="fa-solid fa-x"></i>
+
+                <ul class="nav-list-mobile">
+                    <li><a class="nav-links mobile" href="#">Inicio</a></li>
+                    <li><a class="nav-links mobile" href="#">Sobre</a></li>
+                    <li><a class="nav-links mobile" href="#">Anúncios</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="txt">
+                <h2>Bem-vindo ao MD Divulgações</h2>
+                <p>Aqui você pode encontrar as melhores oportunidades de divulgação para o seu negócio.</p>
+
+                <div class="buttoms">
+                    <a class="btn--primary" id="cadastrar-anuncio" href="#">Cadastrar Anúncio</a>
+                    <a class="btn--secondary" href="#featured-ads">Ver Anúncios</a>
+                </div>
+            </div>
+
+            <div class="imagem">
+                <img class="bounce" src="./assets/foguete-logo.png" alt="foto">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Filtros -->
+    <section class="filters">
+        <div class="container filters__wrap">
+            <div class="search">
+                <input id="searchInput" type="search" placeholder="Busque por nome, descrição, cidade..."
+                    aria-label="Buscar" />
+                <button id="searchBtn" class="btn btn--secondary">Buscar</button>
+            </div>
+            <div class="filters__controls">
+                <select id="categorySelect">
+                    <option value="">Todas as categorias</option>
+                    <option value="comercio">Comércio</option>
+                    <option value="servicos">Serviços</option>
+                    <option value="eventos">Eventos</option>
+                    <option value="imoveis">Imóveis</option>
+                    <option value="empregos">Empregos</option>
+                </select>
+                <!-- <select id="sortSelect">
+                    <option value="recentes">Mais recentes</option>
+                    <option value="preco-asc">Preço: menor para maior</option>
+                    <option value="preco-desc">Preço: maior para menor</option>
+                    <option value="az">A–Z</option>
+                </select> -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="slider-container">
+
+            <div class="slider">
+
+                <div class="slides">
+                    <!-- radio buttons -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- fim buttons -->
+
+                    <!-- slide img -->
+                    <div class="slide first">
+                        <img class="bounce3" src="https://www.agrimidia.com.br/wp-content/uploads/2023/08/H083848-F00000-S469.jpeg"
+                            alt="foto 1">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://www.valuehost.com.br/blog/wp-content/uploads/2020/09/trabalho-remoto.jpg"
+                            alt="foto 2">
+                    </div>
+
+                    <div class="slide">
+                        <img class="bounce2"
+                            src="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-me-alimentar-melhor/noticias/2022/frutas-in-natura-sao-sempre-a-melhor-opcao/texto-6-frutas-in-natura-sao-sempre-a-melhor-opcao.png/@@images/ad9e0c87-e72c-411a-9b3c-2eeb761dfbf2.png"
+                            alt="foto 3">
+                    </div>
+                    <!-- fim slide img -->
+
+                    <!-- navigation auto -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+
+                <!-- manual -->
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="featured-ads">
+        <div class="container-anuncio">
+            <h3>Anúncios em Destaque</h3>
+            <div class="anuncios">
+                <div class="cards">
+                    <div class="img-card"> <img
+                            src="https://images.tcdn.com.br/img/img_prod/1012480/queijo_minas_frescal_500g_115_1_8b39c30dfb00578c66a638184c5f0054_20210525160154.jpg"
+                            alt="imagem da casa"></div>
+                    <h2>Queijo</h2>
+                    <p><span>Localização:</span> Rua Exemplo, 123</p>
+                    <p><span>Descrição:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore odit
+                        commodi ducimus quam dolorem qui beatae, quibusdam autem doloribus facilis tenetur porro non,
+                        earum quas quasi. Error, eos ab!</p>
+                    <p><span>Preço:</span> R$ 20,00 <span>KG</span></p>
+
+                    <button>Ver Detalhes</button>
+                </div>
+
+                <div class="cards">
+                    <div class="img-card"> <img src="https://img.cdndsgni.com/preview/10027282.jpg"
+                            alt="imagem da casa"></div>
+                    <h2>Frutas</h2>
+                    <p><span>Localização:</span> Rua Exemplo, 123</p>
+                    <p><span>Descrição:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veniam unde,
+                        nihil aperiam assumenda aspernatur sed tenetur? Deserunt tempora maiores repellat voluptates,
+                        ipsa, quas quam blanditiis unde ratione laboriosam impedit.</p>
+                    <p><span>Preço:</span> R$ 1,99 <span>KG</span></p>
+
+                    <button>Ver Detalhes</button>
+                </div>
+
+                <div class="cards">
+                    <div class="img-card"> <img src="https://minasumluxo.com.br/wp-content/uploads/2025/04/eventos.jpg"
+                            alt="imagem da casa"></div>
+                    <h2>Show de Talentos</h2>
+                    <p><span>Localização:</span> Rua Exemplo, 123</p>
+                    <p><span>Descrição:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+                        ratione ducimus illo, sint corporis harum reprehenderit quas maiores magni soluta mollitia
+                        voluptates ipsa quasi in vitae saepe. Neque, adipisci alias.</p>
+                    <p><span>Preço:</span> R$ 0</p>
+
+                    <button>Ver Detalhes</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container-about">
+            <div class="form">
+                <h2>Entre em Contato</h2>
+                <form action="#" id="contactForm">
+                    <input type="text" id="nome" placeholder="Nome" >
+                    <input type="email" id="email" placeholder="E-mail" >
+                    <textarea id="mensagem" placeholder="Mensagem" ></textarea>
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </form>
+            </div>
+
+            <div class="txt-about">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma plataforma dedicada à divulgação de produtos e serviços locais, conectando compradores e
+                    vendedores de forma prática e eficiente.</p>
+                <p>Nossa missão é facilitar o acesso a oportunidades de negócios na sua região, promovendo o crescimento
+                    econômico local.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="conteudo">
+            <div class="logo-footer"><img src="./assets/DIVULGAÇÕES.png" alt="logo"></div>
+            <div class="sociais">
+                <div class="zap"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
+                <div class="insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+        </div>
+       <div class="txt-footer"> <p>&copy; 2025 MD-DIVULGAÇÕES. Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

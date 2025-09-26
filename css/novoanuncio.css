@@ -1,0 +1,78 @@
+:root {
+    --primary: #00ff99;
+    --primary-dark: #009966;
+    --accent: #00e6b8;
+    --bg: #101820;
+    --bg-light: #18232e;
+    --text: #e6fff7;
+    --text-dark: #00ff99;
+    --border: #00ff9944;
+    --shadow: 0 4px 24px #00ff9944;
+}
+
+#novoAnuncio {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.form-anuncio {
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: var(--shadow);
+    margin-top: 50px;
+
+    
+}
+
+.form-anuncio h2 {
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.form-anuncio input,
+.form-anuncio textarea,
+.form-anuncio select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    background: var(--bg);
+    color: var(--text);
+}
+
+#adForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.form-anuncio button {
+    width: 48%;
+    margin-right: 4%;
+    background: var(--primary);
+    color: var(--bg);
+    margin-bottom: 30px;
+}
